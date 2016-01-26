@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -50,6 +51,7 @@ public class Fragment2 extends Fragment {
         args.putString(ARG_PARAM2, param2);
 
         fragment.setArguments(args);
+
         return fragment;
     }
 
@@ -67,6 +69,7 @@ public class Fragment2 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_fragment2, container, false);
+
 
         return rootView;
     }

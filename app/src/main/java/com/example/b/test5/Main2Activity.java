@@ -22,7 +22,7 @@ public class Main2Activity extends AppCompatActivity implements Fragment2.OnFrag
         fragmentManager
                 .beginTransaction()
                 .replace(R.id.fragment2,
-                        Fragment2.newInstance(intent.getStringExtra("param1"), intent.getStringExtra("param1"))).commit();
+                        Fragment2.newInstance(intent.getStringExtra("param1"), intent.getStringExtra("param2"))).commit();
 
         Toast.makeText(this,"Fragment2 set",Toast.LENGTH_SHORT).show();
     }

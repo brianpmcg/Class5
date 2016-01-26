@@ -132,7 +132,7 @@ public class Fragment1 extends Fragment {
     }
 
     public void moveToActivity2(View view) {
-        Toast.makeText(this.getContext(),"moveToActivity2",Toast.LENGTH_SHORT);
+        Toast.makeText(this.getContext(),"Fragment1:moveToActivity2",Toast.LENGTH_SHORT).show();
         Intent nextActivityIntent = new Intent(this.getActivity(), Main2Activity.class);
         nextActivityIntent.putExtra(ARG_PARAM1, "Example Data Messsage");
         nextActivityIntent.putExtra(ARG_PARAM2, "8");
