@@ -68,9 +68,12 @@ public class Fragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        Toast.makeText(this.getContext(), "Frag2 onCreateView",Toast.LENGTH_SHORT).show();
         View rootView = inflater.inflate(R.layout.fragment_fragment2, container, false);
 
-
+        TextView paramText = (TextView) rootView.findViewById(R.id.params);
+        paramText.setText("Passed in:["+mParam1+"]["+mParam2+"]");
+        Toast.makeText(this.getContext(), "Passed in:["+mParam1+"]["+mParam2+"]",Toast.LENGTH_SHORT).show();
         return rootView;
     }
 
